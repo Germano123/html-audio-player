@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8" name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Audio Player</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/c4254e24a8.js" crossorigin="anonymous"></script>
+  </head>
+  <body>
+    <div class="container">
+      <div class="audioplayer">
+        <nav>
+          <div class="navbtn">
+            <i class="fa-solid fa-angle-left"></i>
+          </div>
+          <div class="navbtn">
+            <i class="fa-solid fa-bars"></i>
+          </div>
+        </nav>
+        <img />
+        <audio id="audiofile">
+          <source src="../public/audio/beat1.wav" type="audio/wav">
+          Browser can't support this audio.
+        </audio>
+        <input type="range" value="0" id="audioprogress">
+        <div class="audiocontrols">
+          <div><i class="fa-solid fa-backward"></i></div>
+          <div onclick="playpause()"><i class="fa-solid fa-play" id="ctrlicon"></i></div>
+          <div><i class="fa-solid fa-forward"></i></div>
+        </div>
+      </div>
+    </div>
+
+    <script src="./script.js"></script>
+  </body>
+</html>
